@@ -1,0 +1,320 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* .free {
+    padding: 10px 30px;
+    width: 100%;
+    background: black;
+    display: flex;
+}
+.free .icon {
+    color: #f3b123;
+    font-size: 32px;
+}
+.free p{
+    margin-left: 10px;
+    color: white;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+} */
+
+/* main header section  */
+.main_header{
+
+    padding: 30px 40px;
+    width: 100%;
+
+}
+.main_header .Container{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.main_header .Container .logo img{
+    margin-top: 2px;
+    /* padding: 5px 10px; */
+    height: 60px ;
+    width: 60px;
+
+}
+.main_header .Container .search_box{
+    width: 100%;
+    margin-right: 30px;
+    max-width: 700px;
+    background:rgba(255, 255 , 255 ,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    
+    
+
+}
+.main_header .Container .search_box input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid #0989;
+    width: 300px;
+    color: #9a9a9a;
+}
+.main_header .Container .search_box button{
+ 
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #58629b;
+    cursor: pointer;
+
+}
+@media (max-width: 768px) {
+    .main_header .Container .search_box {
+        max-width: none; /* Remove max-width on smaller screens */
+        width: 100%;
+    }
+}
+
+
+.main_header .Container .icon{
+    display: flex;
+    
+
+}
+.main_header .Container .icon .account{
+    display: flex;
+    margin-right: 30px;
+}
+
+.main_header .Container .icon .user_icon {
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.main_header .Container .icon .account p{
+    margin-right: 5px;
+    margin-top: 2px;
+
+}
+.main_header .Container .icon .second_icon{
+    display: flex;
+    
+
+}
+.main_header .Container .icon .second_icon .link{
+    margin-right: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: rgb(7, 77, 53);
+    
+}
+
+
+/* responsive main header  */
+@media (max-width: 768px) {
+    .main_header .Container .search_box,
+    .main_header .Container .icon {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+    }
+
+    .main_header .Container .search_box {
+        width: 100%; /* Make the search box fill the available space */
+    }
+
+    .main_header .Container .icon .account {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+
+
+/* header section  */
+ /* .header{
+    width: 100%;
+    padding: 28px 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: black;
+  
+  
+ }
+ .header .nav_container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+ }
+ .header .nav_container .nav ul{
+    display: flex;
+
+ }
+ .header .nav_container .nav ul li{
+    margin-left: 20px;
+    list-style: none;
+ }
+ .header .nav_container .nav ul li .link{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+ }
+ 
+ .header .nav_container .nav ul li .link:hover{
+    color: rgb(24, 233, 52);
+ } */
+ /* authentication btn  */
+ /* .header .nav_container .auth{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+ }
+ .header .nav_container .auth button{
+    margin-right: 20px;
+  
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+ } */
+ /* menu icon  */
+ /* .header .nav_container .menuicon{
+    
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    z-index: 10001;
+    display: none;
+ }
+ .header .nav_container .closebtn{
+    display: none;
+ } */
+
+ /* header section 2 */
+ :root {
+	--mainColor: #141417;
+	--mainColorLight: #1a1d29;
+	--secondaryColor: #3db66b;
+	--textColor: #eee;
+}
+
+.navheader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+.nav  a {
+	margin: 0 1rem;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+	color: var(--textColor);
+	text-decoration: none;
+    
+}
+
+.nav  a:hover {
+	color: var(--secondaryColor);
+}
+
+
+ .nav .auth button{
+    margin-left: 1000px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+ }
+ .nav .auth button :hover{
+   color: var(--secondaryColor);
+ }
+
+.navheader .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.navheader div,
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.navheader .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.navheader .nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+    .navheader .nav  .auth button{
+      
+        margin-left:10px;
+    
+    }
+
+
+	.navheader .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	.nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav a {
+		font-size: 1.5rem;
+	}
+}
+
